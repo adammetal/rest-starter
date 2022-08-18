@@ -1,0 +1,26 @@
+GET http://localhost:8080/api/kittens
+###
+
+GET http://localhost:8080/api/kittens/Bogyoo
+###
+
+POST http://localhost:8080/api/kittens
+Content-Type: application/json
+
+{
+  "name": "Fogyi",
+  "type": "Unknown",
+  "price": 1
+}
+
+###
+PUT http://localhost:8080/api/kittens/Bogyoo
+Content-Type: application/json
+
+{
+  "type": "Teknőc",
+  "price": 150000
+}
+
+###
+DELETE http://localhost:8080/api/kittens/Fogyi
